@@ -1,0 +1,58 @@
+/* Google import */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+/* Asterisk wildcard selector to overide deafult styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+
+body {
+    color: #1c1d1e;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #FECC00;
+}
+
+h1 {
+    color: #1c1d1e;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    padding: 6vw 0 4vw 0;
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: "Libre Baskerville", serif;
+    margin: 1rem 0 1rem 0;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: "Libre Baskerville", serif;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.4rem;
+}
+
+.hide {
+    display: none;
+}
+
+#game-area {
+    background-color: #006AA7;
+    position: relative;
+    width: 85%;
+    height: 74vh;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    border-radius: 10px;
+}

@@ -90,13 +90,35 @@ p {
     overflow: auto;
 }
 
-#instructions-content {
-    background-color: #006AA7;
+/* Instructions modal*/
+.close {
+    font-size: 2rem;
+    margin-top: .5rem;
 }
 
-#instructions-content>p {
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#instructions-content {
+    color: #000000;
+}
+
+#instructions-content h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+#instructions-content p {
     text-align: left;
-    margin: 1rem;
+    line-height: 1.4rem;
+    margin: 0 1rem 0 1.5rem;
+}
+
+#instructions-content p:last-of-type {
+    text-align: center;
 }
 
 #instructions {

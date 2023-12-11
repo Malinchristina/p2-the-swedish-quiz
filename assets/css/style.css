@@ -217,3 +217,16 @@ i.fa-solid.fa-down-long {
     color: #ffffff;
     margin: 1rem 0 1rem 0;
 }
+
+/* Footer*/
+footer {
+    color: #000000;
+    margin: 1.4rem 1rem 1rem 1rem;
+    font-size: 90%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

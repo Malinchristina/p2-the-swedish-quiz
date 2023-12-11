@@ -195,6 +195,22 @@ function playNextQuestion() {
     }
 }
 
+/**
+ * Modal that shows as popup when user do not select an answer
+ * Modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
+ */
+function selectAnswerModal() {
+    let answerPopup = document.getElementById("select-answer-modal");
+    answerPopup.style.display = "block";
+
+    // Close modal
+    let okAnswerButton = document.getElementById("answer-ok");
+    okAnswerButton.addEventListener("click", function () {
+        answerPopup.style.display = "none";
+    });
+
+}
+
 // Increment correct score, from Love Maths
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("correctscore").innerText);

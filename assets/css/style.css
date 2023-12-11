@@ -230,3 +230,35 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Instrucions*/
+    #instructions-content p {
+        margin: 0 4rem 0 4.5rem;
+    }
+
+    /* Answers */
+    .answers {
+        width: 80%;
+    }
+}
+
+/* Media query: laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+
+    /* Game area */
+    #game-area p {
+        margin: 1rem 4rem 0 4rem;
+    }
+
+    /* Instructions*/
+    #instructions-content p {
+        margin: 0 9rem 0 9.5rem;
+    }
+
+    .answers {
+        width: 66%;
+    }
+}

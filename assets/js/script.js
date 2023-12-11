@@ -211,6 +211,24 @@ function selectAnswerModal() {
 
 }
 
+// Reset color and add event listener
+function resetBackgroundColor() {
+    answerColor.forEach(answer => {
+        answer.style.backgroundColor = "";
+        answer.addEventListener("click", checkAnswer);
+        answer.style.pointerEvents = 'auto';
+    });
+}
+
+// Remove event listener when answer is chosen
+function disableClickAnswers() {
+    answerColor.forEach(answer => {
+        answer.removeEventListener("click", checkAnswer);
+        answer.style.pointerEvents = 'none';
+    });
+
+}
+
 // Remove event listener when answer is chosen
 function disableClickAnswers() {
     answerColor.forEach(answer => {

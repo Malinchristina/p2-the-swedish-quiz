@@ -177,11 +177,17 @@ function playNextQuestion() {
     }
 }
 
-// Increment correct score
-function incrementScore() {}
+// Increment correct score, from Love Maths
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("correctscore").innerText);
+    document.getElementById("correctscore").innerText = ++oldScore;
+}
 
-// Increment incorrect score
-function incrementIncorrectScore() {}
+// Increment incorrect score, from Love Mats
+function incrementIncorrectScore() {
+    let oldScore = parseInt(document.getElementById("incorrectscore").innerText);
+    document.getElementById("incorrectscore").innerText = ++oldScore;
+}
 
 // Reset score if player want to play again
 function resetScore() {}

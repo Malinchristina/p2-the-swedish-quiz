@@ -147,7 +147,18 @@ function incrementIncorrectScore() {}
 function resetScore() {}
 
 //Restart the game
-function playAgain() {}
+function playAgain() {
+    resetScore();
+    resume.classList.add("hide");
+    resume.classList.remove("visible");
+    gameArea.classList.add("visible");
+    gameArea.classList.remove("hide");
+}
 
 //End game if user want to quit beforhand or all questions are played
-function endGame() {}
+function endGame() {
+    questionsArea.classList.remove("visible");
+    questionsArea.classList.add("hide");
+    resume.classList.remove("hide");
+    resume.classList.add("visible");
+}

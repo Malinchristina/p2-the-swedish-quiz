@@ -224,7 +224,12 @@ function incrementIncorrectScore() {
 }
 
 // Reset score if player want to play again
-function resetScore() {}
+function resetScore() {
+    correctScore = 0;
+    incorrectScore = 0;
+    document.getElementById("correctscore").innerText = "0";
+    document.getElementById("incorrectscore").innerText = "0";
+}
 
 //Restart the game
 function playAgain() {

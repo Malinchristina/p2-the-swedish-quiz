@@ -132,10 +132,50 @@ function showQuestion() {
 }
 
 // Check selected answer;
-function checkAnswer(event) {}
+function checkAnswer(event) {
+    const selectedAnswer = event.target.dataset.type;
+    const correctAnswer = quizQuestions[questionIndex].correctAnswer;
+
+
+    // Color correct answer green, incorrect red
+    if (selectedAnswer === correctAnswer) {
+        event.target.style.backgroundColor = "green";
+        incrementScore();
+    } else {
+        revealCorrectAnswer();
+        event.target.style.backgroundColor = "red";
+        incrementIncorrectScore();
+    }
+    // Is this same as disable click answers?
+    /*document.querySelectorAll('.answers').forEach(answer => {
+        answer.removeEventListener('click', checkAnswer);
+        answer.style.pointerEvents = 'none';
+    });*/
+
+    disableClickAnswers();
+
+    chosenAnswer = true;
+}
 
 // Show next question
-function playNextQuestion() {}
+function playNextQuestion() {
+    // Check if there are questions left
+    if (questionIndex < quizQuestions.length - 1 && chosenAnswer) {
+
+        // Increment the question index
+        questionIndex++;
+
+        showQuestion();
+        chosenAnswer = false;
+    } else {
+        if (questionIndex === quizQuestions.length - 1) {
+            endGame();
+            // Alert if no question is clicked    
+        } else {
+            selectAnswerModal();
+        }
+    }
+}
 
 // Increment correct score
 function incrementScore() {}
@@ -155,7 +195,7 @@ function playAgain() {
     gameArea.classList.remove("hide");
 }
 
-//End game if user want to quit beforhand or all questions are played
+//End game if user want to quit beforehand or all questions are played
 function endGame() {
     questionsArea.classList.remove("visible");
     questionsArea.classList.add("hide");

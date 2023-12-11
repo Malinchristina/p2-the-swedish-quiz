@@ -146,6 +146,39 @@ p {
     margin: 1rem 0 1rem 0;
 }
 
+/* Quiz area */
+.answers {
+    background-color: #FECC00;
+    border-radius: 10px;
+    color: #000000;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    margin: 0.5rem auto;
+    padding: 1rem;
+}
+
+#questions {
+    line-height: 1.4rem;
+    font-size: 90%;
+}
+
+.option {
+    line-height: 1.4rem;
+}
+
+#next {
+    margin-top: 0.5rem;
+}
+
+#quit {
+    margin: 1rem 0 1rem 0;
+}
+
+#play-again {
+    margin-bottom: 1.4rem;
+}
+
 i.fa-solid.fa-check {
     color: #63d01b;
 }

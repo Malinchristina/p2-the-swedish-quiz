@@ -8,10 +8,8 @@
     box-sizing: border-box;
 }
 
-/* General styling */
-
 body {
-    color: #1c1d1e;
+    color: #ffffff;
     font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: #FECC00;
@@ -26,24 +24,26 @@ h1 {
 }
 
 h2 {
-    color: #ffffff;
     font-family: "Libre Baskerville", serif;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 h3 {
-    color: #ffffff;
     font-family: "Libre Baskerville", serif;
 }
 
 p {
-    color: #ffffff;
     line-height: 1.4rem;
 }
 
+/* Hide or add content not visible all the time */
 .hide {
     display: none;
 }
+
+.visible {
+    display: block;
+}    
 
 /* Game area*/
 

@@ -1,117 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Swedish Quiz. Quiz game to test your knowledge of Sweden.">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Swedish Quiz. Quiz game to test your knowledge of Sweden."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>The Swedish Quiz</title>
-</head>
-<body>
-    <h1>The Swedish Quiz</h1>
-    
+  </head>
+  <body>
+    <header>
+      <h1>The Swedish Quiz</h1>
+    </header>
+
     <!--Game area-->
-    
+
     <div id="game-area" class="">
-        <h2>What do you know about Sweden?</h2>
-        <p>The long country up north in Europe, known for all its lakes and vast nature. What do you know about it? Test
-            your knowledge in this quiz.</p>
-        <br>
-        <p>Best of luck! <i class="fa-regular fa-thumbs-up"></i></p>
-        <label id="name" for="enter-name"></label>
-        <br>
-        <input type="text" placeholder="Enter your name" id="enter-name" name="enter-name" required>
-    
-        <!--Pop up for user name input (modal)-->
-        <div id="alert-name-input-area" class="modal-ok">
-            <div id="alert-name-input">
-                <p>Enter your name please!</p>
-                <button id="ok" class="btn-ok" data-type="ok">ok</button>
-    
-            </div>
+      <h2>What do you know about Sweden?</h2>
+      <p>
+        The long country up north in Europe, known for all its lakes and vast
+        nature. What do you know about it? Test your knowledge in this quiz.
+      </p>
+      <br />
+      <p>Best of luck! <i class="fa-regular fa-thumbs-up"></i></p>
+      <label id="name" for="enter-name"></label>
+      <br />
+      <input
+        type="text"
+        placeholder="Enter your name"
+        id="enter-name"
+        name="enter-name"
+        required
+      />
+
+      <!--Pop up for user name input (modal)-->
+      <div id="alert-name-input-area" class="modal-ok">
+        <div id="alert-name-input">
+          <p>Enter your name please!</p>
+          <button id="ok" class="btn-ok" data-type="ok">ok</button>
         </div>
-        <div class="button-area">
-            <button id="instructions" class="btn">Instructions</button>
-            <button id="play" class="btn" data-type="start">Play</button>
-        </div>
+      </div>
+      <div class="button-area">
+        <button id="instructions" class="btn">Instructions</button>
+        <button id="play" class="btn" data-type="start">Play</button>
+      </div>
     </div>
 
     <!-- Instructions modal-->
     <div id="instructions-modal" class="modal">
-        <div id="instructions-content" class="">
-            <h3>How to play!</h3>
-            <p>1. Fill out your name.</p>
-            <p>2. There are 10 questions. Click play to start the game.</p>
-            <p>3. There are 3 options to each question. Click the one you think is correct.</p>
-            <p>4. Correct answer will be displyed in green and incorrect in red.</p>
-            <p>5. Press "Next" to move on to the next question.</p>
-            <p>6. Press "Quit" if you want to quit the game before the last qestion.</p>
-            <br>
-            <p>Good Luck!</p>
-            <span class="close">&times;</span>
-        </div>
+      <div id="instructions-content" class="">
+        <h3>How to play!</h3>
+        <p>1. Fill out your name.</p>
+        <p>2. There are 10 questions. Click play to start the game.</p>
+        <p>
+          3. There are 3 options to each question. Click the one you think is
+          correct.
+        </p>
+        <p>4. Correct answer will be displyed in green and incorrect in red.</p>
+        <p>5. Press "Next" to move on to the next question.</p>
+        <p>
+          6. Press "Quit" if you want to quit the game before the last qestion.
+        </p>
+        <br />
+        <p>Good Luck!</p>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <!-- Quiz area -->
-    
-    <div id="questions-area" class="hide">
-        <h2 class="questions">Questions</h2>
-        <div id="timer" class="timer"> <i class="fa-regular fa-clock"></i>
-            00
-        </div>
-        <div id="questions"></div>
-        <div class="answers-area">
-            <button id="answersA" class="answers" data-type="a">Answer A</button>
-            <button id="answersB" class="answers" data-type="b">Answer B</button>
-            <button id="answersC" class="answers" data-type="c">Answer C</button>
-        </div>
-        <div>
-            <button id="next" class="btn" data-type="next">Next</button>
-            <button id="quit" class="btn" data-type="quit">Quit</button>
-        </div>
 
-        <!--Pop up for user to select answer (modal)-->
-        <div id="select-answer-modal" class="modal-ok">
-            <div id="select-answer">
-                <p>Choose an answer to continue!</p>
-                <button id="answer-ok" class="btn-ok" data-type="answer-ok">ok</button>
-            </div>
+    <div id="questions-area" class="hide">
+      <h2 class="questions">Questions</h2>
+      <div id="timer" class="timer">
+        <i class="fa-regular fa-clock"></i>
+        00
+      </div>
+      <div id="questions"></div>
+      <div class="answers-area">
+        <button id="answersA" class="answers" data-type="a">Answer A</button>
+        <button id="answersB" class="answers" data-type="b">Answer B</button>
+        <button id="answersC" class="answers" data-type="c">Answer C</button>
+      </div>
+      <div>
+        <button id="next" class="btn" data-type="next">Next</button>
+        <button id="quit" class="btn" data-type="quit">Quit</button>
+      </div>
+
+      <!--Pop up for user to select answer (modal)-->
+      <div id="select-answer-modal" class="modal-ok">
+        <div id="select-answer">
+          <p>Choose an answer to continue!</p>
+          <button id="answer-ok" class="btn-ok" data-type="answer-ok">
+            ok
+          </button>
         </div>
-        
-        <!--Pop up for times up (modal)-->
-        <div id="times-up-modal" class="modal-ok">
-            <div id="times-up">
-                <p>Times up, game over!</p>
-                <button id="times-up-ok" class="btn-ok" data-type="answer-ok">ok</button>
-            </div>
+      </div>
+
+      <!--Pop up for times up (modal)-->
+      <div id="times-up-modal" class="modal-ok">
+        <div id="times-up">
+          <p>Times up, game over!</p>
+          <button id="times-up-ok" class="btn-ok" data-type="answer-ok">
+            ok
+          </button>
         </div>
+      </div>
     </div>
-    
+
     <!-- Resume area -->
     <div id="resume" class="hide">
-        <h2>Well Played!</h2>
-        <p>Want to play again?</p>
-        <i class="fa-solid fa-down-long fa-2x"></i>
-        <br>
-        <button id="play-again" class="btn">Play again</button>
+      <h2>Well Played!</h2>
+      <p>Want to play again?</p>
+      <i class="fa-solid fa-down-long fa-2x"></i>
+      <br />
+      <button id="play-again" class="btn">Play again</button>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="footer">
-            <p> <i class="fa-regular fa-copyright"></i> The Swedish Quiz</p>
-            <p>Created by Malin Nilsson for Project portfolio 2</p>
-            <p>Code Institute</p>
-        </div>
+      <div class="footer">
+        <p><i class="fa-regular fa-copyright"></i> The Swedish Quiz</p>
+        <p>Created by Malin Nilsson for Project portfolio 2</p>
+        <p>Code Institute</p>
+      </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/efed2a2412.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/efed2a2412.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js" type="module"></script>
-</body>
+  </body>
 </html>

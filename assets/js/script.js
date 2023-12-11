@@ -95,10 +95,41 @@ function startQuiz() {
  * Function to call questions in random order no matter if there are
  * new questions added or removed. 
  */
-function shuffleQuizQuestions() {}
+function shuffleQuizQuestions() {
+    let randomQuestions = Math.floor(Math.random() * quizQuestions.length);
+    let shuffledQuestion = { ...quizQuestions[randomQuestions] };
+
+    // Get the corresponding answers
+    let randomAnswers = Object.keys(shuffledQuestion.answers);
+    randomAnswers = randomAnswers.sort(() => Math.random() - 0.5);
+    let shuffledAnswers = {};
+    for (let key of randomAnswers) {
+        shuffledAnswers[key] = shuffledQuestion.answers[key];
+    }
+    shuffledQuestion.answers = shuffledAnswers;
+
+    return shuffledQuestion;
+}
 
 // Show questions
-function showQuestion() {}
+function showQuestion() {
+    const currentQuestion = quizQuestions[questionIndex];
+    displayQuestions.innerText = currentQuestion.question;
+
+    // Return the correlating answers
+    displayAnswerA.innerText = `a. ${currentQuestion.answers.a}`;
+    displayAnswerB.innerText = `b. ${currentQuestion.answers.b}`;
+    displayAnswerC.innerText = `c. ${currentQuestion.answers.c}`;
+
+    resetBackgroundColor();
+
+    // Let user play 10 questions
+    numberOfQuestions++;
+    if (numberOfQuestions === 4) { //Change to 11 after testing
+        numberOfQuestions = 0;
+        endGame();
+    }
+}
 
 // Check selected answer;
 function checkAnswer(event) {}

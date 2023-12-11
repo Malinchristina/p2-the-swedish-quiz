@@ -107,6 +107,21 @@ p {
     margin: 10%;
 }
 
+.modal-ok {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 5rem;
+    width: 60%;
+    height: auto;
+    overflow: auto;
+    background-color: #FECC00;
+    border-color: #000000;
+    border-radius: 10px;
+    border: #000000 1px solid;
+    margin: 10%;
+}
+
 /* Instructions modal*/
 .close {
     font-size: 2rem;
@@ -140,6 +155,17 @@ p {
 
 #instructions {
     margin-top: 1rem;
+}
+
+/*Name input and answer modal*/
+#alert-name-input,
+#select-answer {
+    color: #000000;
+}
+
+#alert-name-input p,
+#select-answer p {
+    margin: 1rem;
 }
 
 #play {

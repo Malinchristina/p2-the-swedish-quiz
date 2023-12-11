@@ -229,15 +229,6 @@ function disableClickAnswers() {
 
 }
 
-// Remove event listener when answer is chosen
-function disableClickAnswers() {
-    answerColor.forEach(answer => {
-        answer.removeEventListener("click", checkAnswer);
-        answer.style.pointerEvents = 'none';
-    });
-
-}
-
 // Show correct answer in color green when answered incorrect
 function revealCorrectAnswer() {
     const correctAnswerElement = getAnswerElementByType(quizQuestions[questionIndex].correctAnswer);
@@ -249,15 +240,6 @@ function revealCorrectAnswer() {
 
 function getAnswerElementByType(type) {
     return answerColor.find(answer => answer.dataset.type === type);
-}
-
-// Reset color and add event listener
-function resetBackgroundColor() {
-    answerColor.forEach(answer => {
-        answer.style.backgroundColor = "";
-        answer.addEventListener("click", checkAnswer);
-        answer.style.pointerEvents = 'auto';
-    });
 }
 
 // Increment correct score, from Love Maths

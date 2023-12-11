@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 
+/* General styling */
+
 body {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -203,6 +205,17 @@ p {
 
 #play-again {
     margin-bottom: 1.4rem;
+}
+
+/* Score*/
+.correctscore {
+    color: #000000;
+    margin-top: 0.5rem;
+}
+
+.incorrectscore {
+    color: #000000;
+    margin-bottom: 0.5rem;
 }
 
 i.fa-solid.fa-check {

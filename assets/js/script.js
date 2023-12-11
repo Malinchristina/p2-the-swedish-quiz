@@ -47,6 +47,21 @@ displayAnswerA.addEventListener("click", checkAnswer);
 displayAnswerB.addEventListener("click", checkAnswer);
 displayAnswerC.addEventListener("click", checkAnswer);
 
+/**
+ * Show a popup window (Modal) with instructions when the Instructions button is clicked.
+ * Modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
+ */
+let instructionsPopup = document.getElementById("instructions-modal");
+const instructionsButton = document.getElementById("instructions");
+let span = document.getElementsByClassName("close")[0];
+instructionsButton.onclick = function () {
+    instructionsPopup.style.display = "block";
+};
+// Close modal
+span.onclick = function () {
+    instructionsPopup.style.display = "none";
+};
+
 // Check that user name is entered
 function checkUserName() {
     const userName = userNameLabel.value.trim();

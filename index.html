@@ -24,14 +24,21 @@
             your knowledge in this quiz.</p>
         <br>
         <p>Best of luck! <i class="fa-regular fa-thumbs-up"></i></p>
+        <label id="name" for="enter-name"></label>
         <br>
-        <label id="name" for="enter-name">Enter your name:</label>
-        <br>
-        <input type="text" placeholder="Enter your name" id="enter-name" name="enter-name">
+        <input type="text" placeholder="Enter your name" id="enter-name" name="enter-name" required>
+    
+        <!--Pop up for user name input (modal)-->
+        <div id="alert-name-input-area" class="modal-ok">
+            <div id="alert-name-input">
+                <p>Enter your name please!</p>
+                <button id="ok" class="btn-ok" data-type="ok">ok</button>
+    
+            </div>
+        </div>
         <div class="button-area">
             <button id="instructions" class="btn">Instructions</button>
-            <button id="play" class="btn">Play</button>
-            <!--<button id="sound" class="btn">Sound</button>-->
+            <button id="play" class="btn" data-type="start">Play</button>
         </div>
     </div>
 

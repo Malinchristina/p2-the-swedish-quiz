@@ -42,6 +42,9 @@ let correctScore = 0;
 let incorrectScore = 0;
 let chosenAnswer = false;
 
+// Array to enable/disable color to indicate correct/incorrect answer
+const answerColor = [displayAnswerA, displayAnswerB, displayAnswerC];
+
 // Add event listeners to answers buttons
 displayAnswerA.addEventListener("click", checkAnswer);
 displayAnswerB.addEventListener("click", checkAnswer);

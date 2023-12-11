@@ -48,16 +48,48 @@ displayAnswerB.addEventListener("click", checkAnswer);
 displayAnswerC.addEventListener("click", checkAnswer);
 
 // Check that user name is entered
-function checkUserName()
+function checkUserName() {
+    const userName = userNameLabel.value.trim();
+
+    if (userName === "") {
+        userNameModal();
+    } else {
+        startQuiz();
+    }
+}
 
 /**
  * Modal that shows as popup when user do not enter user name
  * Modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
  */
-function userNameModal() {}
+function userNameModal() {
+    let userNamePopup = document.getElementById("alert-name-input-area");
+    userNamePopup.style.display = "block";
+
+    // Close modal
+    let okButton = document.getElementById("ok");
+    okButton.addEventListener("click", function () {
+        userNamePopup.style.display = "none";
+    });
+}
 
 // Initiate quiz
-function startQuiz() {}
+function startQuiz() {
+    //Reset user name
+    userNameLabel.value = "";
+    // Reset score DOES NOT WORK
+    //correctScore = 0;
+    //incorrectScore = 0;
+
+    gameArea.classList.remove("visible");
+    gameArea.classList.add("hide");
+    questionsArea.classList.remove("hide");
+    questionsArea.classList.add("visible");
+    scoreArea.classList.remove("hide");
+    scoreArea.classList.add("visible");
+
+    showQuestion();
+}
 
 /**
  * Function to call questions in random order no matter if there are

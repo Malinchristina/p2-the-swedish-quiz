@@ -20,6 +20,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// Get global variables;
+
+const gameArea = document.getElementById("game-area");
+const questionsArea = document.getElementById("questions-area");
+const answersArea = document.getElementsByClassName("answers-area");
+const scoreArea = document.getElementById("score-area");
+const resume = document.getElementById("resume");
+const userNameLabel = document.getElementById("enter-name");
+const displayQuestions = document.getElementById("questions");
+const shuffledQuestions = shuffleQuizQuestions();
+
+let displayAnswerA = document.getElementById("answersA");
+let displayAnswerB = document.getElementById("answersB");
+let displayAnswerC = document.getElementById("answersC");
+let showTimer = document.getElementById("timer");
+let timer = 30;
+let numberOfQuestions = 0;
+let questionIndex = 0;
+let correctScore = 0;
+let incorrectScore = 0;
+let chosenAnswer = false;
+
+// Add event listeners to answers buttons
+displayAnswerA.addEventListener("click", checkAnswer);
+displayAnswerB.addEventListener("click", checkAnswer);
+displayAnswerC.addEventListener("click", checkAnswer);
+
 // Check that user name is entered
 function checkUserName()
 

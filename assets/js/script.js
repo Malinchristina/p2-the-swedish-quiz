@@ -24,18 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const gameArea = document.getElementById("game-area");
 const questionsArea = document.getElementById("questions-area");
-const answersArea = document.getElementsByClassName("answers-area");
+//const answersArea = document.getElementsByClassName("answers-area");
 const scoreArea = document.getElementById("score-area");
 const resume = document.getElementById("resume");
 const userNameLabel = document.getElementById("enter-name");
 const displayQuestions = document.getElementById("questions");
-const shuffledQuestions = shuffleQuizQuestions();
+//const shuffledQuestions = shuffleQuizQuestions();
+const startingSeconds = 30;
 
 let displayAnswerA = document.getElementById("answersA");
 let displayAnswerB = document.getElementById("answersB");
 let displayAnswerC = document.getElementById("answersC");
-/*let showTimer = document.getElementById("timer");
-let timer = 30;*/
+let showTimer = document.getElementById("timer");
+
+let setTimer;
 let numberOfQuestions = 0;
 let questionIndex = 0;
 let correctScore = 0;
@@ -95,6 +97,7 @@ function userNameModal() {
 function startQuiz() {
     //Reset user name
     userNameLabel.value = "";
+    clearInterval();
     // Reset score DOES NOT WORK
     //correctScore = 0;
     //incorrectScore = 0;
@@ -139,6 +142,8 @@ function showQuestion() {
     displayAnswerB.innerText = `b. ${currentQuestion.answers.b}`;
     displayAnswerC.innerText = `c. ${currentQuestion.answers.c}`;
 
+    displayTimer();
+
     resetBackgroundColor();
 
     // Let user play 10 questions
@@ -147,6 +152,47 @@ function showQuestion() {
         numberOfQuestions = 0;
         endGame();
     }
+}
+
+// Set a timer to each questions of 30 seconds
+function displayTimer() {
+    let timer = startingSeconds;
+    setTimer = setInterval(() => {
+        showTimer.innerText = `${timer}`;
+
+        if(timer === 0) {
+            clearInterval(setTimer);
+            timesUp();
+        }
+
+        timer--;
+
+        // Stop timer when the question has been answered
+        if(chosenAnswer) {
+            clearInterval(setTimer);
+            chosenAnswer = false;
+            showQuestion();
+            return;
+        }
+      
+    }, 1000);
+
+}
+
+/**
+ * Modal that shows as popup when user reaches times up
+ * Modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
+ */
+function timesUp() {
+    let timeIsUp = document.getElementById("times-up-modal");
+    timeIsUp.style.display = "block";
+
+    // Close modal
+    let timesUpOk = document.getElementById("times-up-ok");
+    timesUpOk.addEventListener("click", function (endGame) {
+        timeIsUp.style.display = "none";
+    });
+    
 }
 
 // Check selected answer;
@@ -173,6 +219,8 @@ function checkAnswer(event) {
     disableClickAnswers();
 
     chosenAnswer = true;
+
+    clearInterval(setTimer);
 }
 
 // Show next question

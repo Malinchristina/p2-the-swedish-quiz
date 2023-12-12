@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 endGame();
             } else if (this.getAttribute("data-type") === "play-again") {
                 playAgain();
-            } else if (this.getAttribute("data-type") === "times-up-ok") {
-                endGame();
-            }
+            } 
         });
     }
 
@@ -188,6 +186,11 @@ function timesUp() {
     let timesUpOk = document.getElementById("times-up-ok");
     timesUpOk.addEventListener("click", function () {
             timeIsUp.style.display = "none";
+
+            // Delay endGame call
+            setTimeout(function () {
+                endGame();
+            }, 100);
         });
         
 }

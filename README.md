@@ -8,9 +8,15 @@ It is responsive to most common screen sizes.
 
 The live site can be fount at [The Swedish Quiz](https://malinchristina.github.io/p2-the-swedish-quiz/).
 
+## UX
+
+Overall a yellow and blue color theme is chosen to match the Swedish color. Buttons are styled the same throughout for a uniform user experience. Modals are used to alert the user to input their name before the quiz can start and to choose an answer before moving on to the next question.
+
 ## Features
 
 ### Favicon
+
+A yellow question mark on blue background to match the site content.
 
 ### Welcome page
 
@@ -54,6 +60,7 @@ Inspiration and structure:
 * [Udemy](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
 * [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
 * [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+* [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/)
 
 Other student's work that has inspired:
 

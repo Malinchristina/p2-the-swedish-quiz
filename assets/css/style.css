@@ -218,6 +218,11 @@ i.fa-regular.fa-clock {
     margin-bottom: 1.4rem;
 }
 
+#times-up >p {
+    color: #000000;
+    margin: 1rem 0 1rem 0;
+}
+
 /* Score*/
 .correctscore {
     color: #000000;

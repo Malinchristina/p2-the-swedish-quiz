@@ -1,5 +1,7 @@
 # The Swedish Quiz
 
+![Mockup](docs/readme_images/mockup.png)
+
 The quiz has three options for each question to choose from and when the user chooses the correct option, it is displayed in green, if incorrect red, and in addition, the correct option is colored in green.
 
 The Quiz has instructions lined out which is shown in a modal.
@@ -28,6 +30,18 @@ A yellow question mark on blue background to match the site content.
 
 ## Wireframe
 
+* Game area
+
+![Image of game-area](docs/readme_images/game_area.png)
+
+* Quiz area
+
+![Image of quiz-area](docs/readme_images/quiz_area.png)
+
+* Resume area
+  
+![Image of resume area](docs/readme_images/resume.png)
+
 ## Testing
 
 * All buttons works as intended.
@@ -49,6 +63,14 @@ A yellow question mark on blue background to match the site content.
 ### Unfixed bugs
 
 ## Deployment
+
+![Deploy 1](docs/readme_images/deploy1.png)
+
+![Deploy 2](docs/readme_images/deploy2.png)
+
+![Deploy 3](docs/readme_images/deploy3.png)
+
+![Deploy 4](docs/readme_images/deploy4.png)
 
 ## Resources, References and Credit
 

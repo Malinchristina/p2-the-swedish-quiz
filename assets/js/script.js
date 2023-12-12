@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 endGame();
             } else if (this.getAttribute("data-type") === "play-again") {
                 playAgain();
+            } else if (this.getAttribute("data-type") === "times-up-ok") {
+                endGame();
             }
         });
     }
@@ -184,11 +186,10 @@ function timesUp() {
 
     // Close modal and end game
     let timesUpOk = document.getElementById("times-up-ok");
-    timesUpOk.addEventListener("click", function (endGame) {
-        timeIsUp.style.display = "none";
-        endGame();
-    });
-    
+    timesUpOk.addEventListener("click", function () {
+            timeIsUp.style.display = "none";
+        });
+        
 }
 
 // Check selected answer;

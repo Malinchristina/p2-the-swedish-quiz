@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const gameArea = document.getElementById("game-area");
 const questionsArea = document.getElementById("questions-area");
-//const answersArea = document.getElementsByClassName("answers-area");
 const scoreArea = document.getElementById("score-area");
 const resume = document.getElementById("resume");
 const userNameLabel = document.getElementById("enter-name");
 const displayQuestions = document.getElementById("questions");
-//const shuffledQuestions = shuffleQuizQuestions();
 const startingSeconds = 30;
 
 let displayAnswerA = document.getElementById("answersA");
@@ -98,10 +96,7 @@ function startQuiz() {
     //Reset user name
     userNameLabel.value = "";
     clearInterval();
-    // Reset score DOES NOT WORK
-    //correctScore = 0;
-    //incorrectScore = 0;
-
+    
     gameArea.classList.remove("visible");
     gameArea.classList.add("hide");
     questionsArea.classList.remove("hide");
@@ -180,17 +175,18 @@ function displayTimer() {
 }
 
 /**
- * Modal that shows as popup when user reaches times up
+ * Modal that shows as popup when time is up
  * Modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
  */
 function timesUp() {
     let timeIsUp = document.getElementById("times-up-modal");
     timeIsUp.style.display = "block";
 
-    // Close modal
+    // Close modal and end game
     let timesUpOk = document.getElementById("times-up-ok");
     timesUpOk.addEventListener("click", function (endGame) {
         timeIsUp.style.display = "none";
+        endGame();
     });
     
 }
@@ -210,12 +206,7 @@ function checkAnswer(event) {
         event.target.style.backgroundColor = "red";
         incrementIncorrectScore();
     }
-    // Is this same as disable click answers?
-    /*document.querySelectorAll('.answers').forEach(answer => {
-        answer.removeEventListener('click', checkAnswer);
-        answer.style.pointerEvents = 'none';
-    });*/
-
+    
     disableClickAnswers();
 
     chosenAnswer = true;

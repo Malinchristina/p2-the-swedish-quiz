@@ -159,7 +159,9 @@ function displayTimer() {
 
         if(timer === 0) {
             clearInterval(setTimer);
+            
             timesUp();
+            numberOfQuestions = 0;
         }
 
         timer--;

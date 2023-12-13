@@ -95,6 +95,8 @@ function userNameModal() {
 function startQuiz() {
     //Reset user name
     userNameLabel.value = "";
+
+    //Reset timer
     clearInterval(setTimer);
     
     gameArea.classList.remove("visible");
@@ -308,6 +310,9 @@ function resetScore() {
 //Restart the game
 function playAgain() {
     resetScore();
+
+    clearInterval(setTimer);
+
     resume.classList.add("hide");
     resume.classList.remove("visible");
     gameArea.classList.add("visible");

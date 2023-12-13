@@ -73,11 +73,12 @@ p {
 
 #enter-name {
     width: 11rem;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 10px;
     border: 1px solid #000000;
     text-align: center;
     margin-top: 1rem;
+    font-size: 100%;
 }
 
 .btn {
@@ -85,8 +86,9 @@ p {
     border-radius: 10px;
     color: aliceblue;
     width: 11rem;
-    height: 2rem;
+    height: 2.5rem;
     border: 1px solid #ffffff;
+    font-size: 100%;
 }
 
 .btn-ok {
@@ -94,9 +96,10 @@ p {
     border-radius: 10px;
     color: aliceblue;
     width: 5rem;
-    height: 2rem;
+    height: 2.5rem;
     border: 1px solid #ffffff;
     margin-bottom: 1rem;
+    font-size: 100%;
 }
 
 /*Style modals*/
@@ -179,6 +182,7 @@ p {
 
 #play {
     margin: 1rem 0 1rem 0;
+    font-size: 100%;
 }
 
 /* Quiz area */
@@ -223,14 +227,17 @@ i.fa-regular.fa-clock {
 
 #next {
     margin-top: 0.5rem;
+    font-size: 100%;
 }
 
 #quit {
     margin: 1rem 0 1rem 0;
+    font-size: 100%;
 }
 
 #play-again {
     margin-bottom: 1.4rem;
+    font-size: 100%;
 }
 
 #times-up >p {

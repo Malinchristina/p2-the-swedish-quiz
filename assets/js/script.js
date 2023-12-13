@@ -95,7 +95,7 @@ function userNameModal() {
 function startQuiz() {
     //Reset user name
     userNameLabel.value = "";
-    clearInterval();
+    clearInterval(setTimer);
     
     gameArea.classList.remove("visible");
     gameArea.classList.add("hide");

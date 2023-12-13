@@ -15,6 +15,8 @@ body {
     font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: #FECC00;
+    font-size: 105%;
+    line-height: 1.4rem;
 }
 
 h1 {
@@ -184,6 +186,11 @@ p {
 
 i.fa-regular.fa-clock {
     margin-right: 0.5rem;
+    color: #FECC00;
+}
+
+#timer {
+    color: #FECC00;
 }
 
 .answers {
@@ -195,11 +202,14 @@ i.fa-regular.fa-clock {
     border: 1px solid #000000;
     margin: 0.5rem auto;
     padding: 1rem;
+    font-size: 105%;
+    line-height: 1.4rem;
 }
 
 #questions {
     line-height: 1.4rem;
-    font-size: 90%;
+    font-size: 105%;
+    margin-top: 0.5rem;
 }
 
 .option {

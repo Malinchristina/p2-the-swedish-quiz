@@ -58,7 +58,8 @@ p {
 
 #game-area,
 #questions-area,
-#resume {
+#resume,
+#404-area {
     background-color: #006AA7;
     position: relative;
     width: 85%;

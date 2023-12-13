@@ -64,11 +64,26 @@ A yellow question mark on blue background to match the site content.
 
 ## Deployment
 
+The site was created on Code Anywhere and pushed and deployed to GitHub.
+
+In the repository:
+
+* Choose settings
+
 ![Deploy 1](docs/readme_images/deploy1.png)
+
+* On the left side bar, choose pages.
 
 ![Deploy 2](docs/readme_images/deploy2.png)
 
+* Under Source, select Deploy from a branch.
+* Under branch, the selection was chosen as shown in the image.
+
 ![Deploy 3](docs/readme_images/deploy3.png)
+
+* Save.
+* Go back to code in the menu.
+* Find the deployed page on the right side under Deployments.
 
 ![Deploy 4](docs/readme_images/deploy4.png)
 
@@ -89,8 +104,6 @@ Other student's work that has inspired:
 * https://lienebriede.github.io/smart-panda-quiz/
 * https://aylamccarthy.github.io/all-about-pokemon/
 * https://asyaharoyan.github.io/gravity-guru/ Classes visible and hide in CSS.
-  
-ChatGPT has been used to break down code for more understanding.
 
 ## Content
 

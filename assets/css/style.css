@@ -155,7 +155,7 @@ p {
     margin: 1rem 0 1rem 0;
 }
 
-#instructions-content p {
+#instructions-content li {
     text-align: left;
     line-height: 1.4rem;
     margin: 0 1rem 0 1.5rem;

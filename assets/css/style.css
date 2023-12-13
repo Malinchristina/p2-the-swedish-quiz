@@ -59,7 +59,7 @@ p {
 #game-area,
 #questions-area,
 #resume,
-#404-area {
+#error-area {
     background-color: #006AA7;
     position: relative;
     width: 85%;
@@ -71,6 +71,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 6px 1px rgb(65, 76, 79);
 }
+
 
 #enter-name {
     width: 11rem;

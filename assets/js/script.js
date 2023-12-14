@@ -313,6 +313,8 @@ function resetScore() {
 function playAgain() {
     resetScore();
 
+    numberOfQuestions = 0;
+
     clearInterval(setTimer);
 
     resume.classList.add("hide");

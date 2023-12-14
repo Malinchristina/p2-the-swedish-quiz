@@ -98,6 +98,21 @@ A yellow question mark on blue background to match the site content.
   
 ![Image of resume area](docs/readme_images/resume.png)
 
+## Technology
+
+* HTML
+  * The structure of the site was developed by using HTML.
+* CSS
+  * The design of the site was developed by using CSS.
+* JavaScript
+  * The interaction of the site was developed with JavaScript.
+* GitHub
+  * The source code is hosted and deployed on GitHub
+* Font Awesome
+  * Icons used as thumbs up and arrow are sourced from [Font Awesome](https://fontawesome.com/).
+* Balsamiq
+  * Balsamiq was used to create basic wireframes.
+
 ## Testing
 
 * All buttons works as intended.

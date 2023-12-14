@@ -115,6 +115,10 @@ A yellow question mark on blue background to match the site content.
 
 ## Testing
 
+|Page      |'Play again' button start the game again, and reset scores, username and timer   | Completed successfully   |
+|----------|:-------------------------------------------------------------------------------:|-------------------------:|
+|All       |
+
 * All buttons works as intended.
 * Modals open when a term isn't met.
 * All 10 questions can be played.

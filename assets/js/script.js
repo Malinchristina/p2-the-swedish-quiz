@@ -146,7 +146,6 @@ function showQuestion() {
     // Let user play 10 questions
     numberOfQuestions++;
     if (numberOfQuestions === 4) { //Change to 11 after testing
-        numberOfQuestions = 0;
         endGame();
     }
 }
@@ -313,8 +312,6 @@ function resetScore() {
 function playAgain() {
     resetScore();
 
-    numberOfQuestions = 0;
-
     clearInterval(setTimer);
 
     resume.classList.add("hide");
@@ -325,7 +322,9 @@ function playAgain() {
 
 //End game if user want to quit beforehand or all questions are played
 function endGame() {
-    questionIndex = 0;
+    numberOfQuestions = 0;
+
+    clearInterval(setTimer);
 
     questionsArea.classList.remove("visible");
     questionsArea.classList.add("hide");

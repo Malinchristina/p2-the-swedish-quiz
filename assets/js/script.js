@@ -325,6 +325,8 @@ function playAgain() {
 
 //End game if user want to quit beforehand or all questions are played
 function endGame() {
+    questionIndex = 0;
+
     questionsArea.classList.remove("visible");
     questionsArea.classList.add("hide");
     resume.classList.remove("hide");

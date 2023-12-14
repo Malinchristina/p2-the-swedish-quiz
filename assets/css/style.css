@@ -285,8 +285,9 @@ footer {
 }
 
 /* 404-page*/
-#error-area p {
+.return-to-home p {
     text-decoration: none;
+    font-size: 105%;
 }
 
 /* Media query: tablets and larger (768px and up) */

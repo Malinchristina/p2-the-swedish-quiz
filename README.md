@@ -1,7 +1,5 @@
 # The Swedish Quiz
 
-![Mockup](docs/readme_images/mockup.png)
-
 The quiz has three options for each question to choose from and when the user chooses the correct option, it is displayed in green, if incorrect red, and in addition, the correct option is colored in green.
 
 The Quiz has instructions lined out which is shown in a modal.
@@ -10,9 +8,15 @@ It is responsive to most common screen sizes.
 
 The live site can be fount at [The Swedish Quiz](https://malinchristina.github.io/p2-the-swedish-quiz/).
 
+![Mockup](docs/readme_images/mockup.png)
+
 ## UX
 
-Overall a yellow and blue color theme is chosen to match the Swedish color. Buttons are styled the same throughout for a uniform user experience. Modals are used to alert the user to input their name before the quiz can start and to choose an answer before moving on to the next question.
+Overall a yellow and blue color theme is chosen to match the Swedish colors. Buttons are styled the same throughout for a uniform user experience. Modals are used to:
+
+* Alert the user to input their name before the quiz can start.
+* To choose an answer before moving on to the next question.
+* Alert the user that times up if no answer has been choosen within 30 seconds.
 
 ## Features
 
@@ -22,11 +26,33 @@ A yellow question mark on blue background to match the site content.
 
 ### Welcome page
 
+![Image of welcome page](docs/readme_images/welcome_page.png)
+
+![Image of welcome page with name](docs/readme_images/welcome_page_name.png)
+
+![Image of welcome page modal](docs/readme_images/enter_name.png)
+
 ### Instructions
+
+![Image of instructions](docs/readme_images/instructions.png)
 
 ### Questions page
 
+![Image of questions](docs/readme_images/questions.png)
+
+![Image of questions colored](docs/readme_images/red_green.png)
+
+![Image of questions modal](docs/readme_images/choose_answer.png)
+
+![Image of times up modal](docs/readme_images/times_up.png)
+
 ### End game page
+
+![Image of end game](docs/readme_images/end_game.png)
+
+### 404 page
+
+* A 404 page is displayed if the user navigates to a broken link.
 
 ## Wireframe
 
@@ -56,6 +82,7 @@ A yellow question mark on blue background to match the site content.
 ### Validator
 
 [Html validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmalinchristina.github.io%2Fp2-the-swedish-quiz%2F)
+
 [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmalinchristina.github.io%2Fp2-the-swedish-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Lighthouse

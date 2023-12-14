@@ -115,18 +115,36 @@ A yellow question mark on blue background to match the site content.
 
 ## Testing
 
-|Page      |'Play again' button start the game again, and reset scores, username and timer   | Completed successfully   |
-|----------|:-------------------------------------------------------------------------------:|-------------------------:|
-|All       |
-
-* All buttons works as intended.
-* Modals open when a term isn't met.
-* All 10 questions can be played.
-* Questions are shuffled.
-* Indication of correct or incorrect answer is shown in green and red.
-* Score is counted and shown.
-* Game can be quit beforehand.
-* Game can be resumed.
+|Page             |Test                                                                                  |Completed successfully    |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|All              |Header navigates to landing page                                                      |Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|All              |Site is responsive to 768px and 992px                                                :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Landing page     |Instruction button shows instructions, and close on X                                :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Landing page     |Input field allows for input name                                                    :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Landing page     |Modal shows if play button is clicked without entering a user name, ok close modal   :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Landing page     |Game starts when user clicks 'Play' button                                           :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |Timer starts, then stops when an option is chosen                                    :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |Options are colored green/red to indicate correct/incorrect answer                   :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |Score increments number of correct and incorrect answers                             :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |Modal shows if 'Next' button is clicked before an answer is chosen                   :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |'Next' button shows the next question                                                :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|Questions page   |'Quit' button ends game and show end game page                                       :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|End game page    |Shows the total correct/incorrect score                                              :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+|End game page    |'Play again' button start the game again, and reset scores, username and timer       :|Yes                       |
+|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
 
 ### Validator
 

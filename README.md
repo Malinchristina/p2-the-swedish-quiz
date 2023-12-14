@@ -32,9 +32,9 @@ A yellow question mark on blue background to match the site content.
 ### Welcome page
 
 * The welcome page has a short inviting text to get the user to play the game. It contains:
-  - An input field for the users name.
-  - An instructions button.
-  - A play button to start the game.
+  * An input field for the users name.
+  * An instructions button.
+  * A play button to start the game.
 
 ![Image of welcome page](docs/readme_images/welcome_page.png)
 
@@ -60,19 +60,19 @@ A yellow question mark on blue background to match the site content.
 
 ![Image of questions](docs/readme_images/questions.png)
 
-![Image of questions colored](docs/readme_images/red_green.png)
-
 * The options are colored to indicate correct/incorrect answer.
-  - Green for correct.
-  - Red for incorrect. If the user has chosen incorrect, the green will show correct answer for the user to learn.
+  * Green for correct.
+  * Red for incorrect. If the user has chosen incorrect, the green will show correct answer for the user to learn.
 
-![Image of questions modal](docs/readme_images/choose_answer.png)
+![Image of questions colored](docs/readme_images/red_green.png)
 
 * A modal to inform the user to choose an answer before moving on to the next question.
 
-![Image of times up modal](docs/readme_images/times_up.png)
+![Image of questions modal](docs/readme_images/choose_answer.png)
 
 * A modal to inform the user that time is up and the game is over.
+
+![Image of times up modal](docs/readme_images/times_up.png)
 
 ### End game page
 

@@ -285,7 +285,7 @@ footer {
 }
 
 /* 404-page*/
-.return-to-home <a {
+.return-to-home a {
     text-decoration: none;
     font-size: 105%;
 }

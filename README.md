@@ -156,6 +156,7 @@ A yellow question mark on blue background to match the site content.
 ### Lighthouse
 
 Lighthouse was accessed in Chrome through Developer Tools to test:
+
 * Performance
 * Accessibility
 * Best practice

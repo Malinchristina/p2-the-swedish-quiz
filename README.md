@@ -115,36 +115,23 @@ A yellow question mark on blue background to match the site content.
 
 ## Testing
 
-|Page             |Test                                                                                  |Completed successfully    |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|All              |Header navigates to landing page                                                      |Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|All              |Site is responsive to 768px and 992px                                                :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Landing page     |Instruction button shows instructions, and close on X                                :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Landing page     |Input field allows for input name                                                    :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Landing page     |Modal shows if play button is clicked without entering a user name, ok close modal   :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Landing page     |Game starts when user clicks 'Play' button                                           :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |Timer starts, then stops when an option is chosen                                    :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |Options are colored green/red to indicate correct/incorrect answer                   :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |Score increments number of correct and incorrect answers                             :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |Modal shows if 'Next' button is clicked before an answer is chosen                   :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |'Next' button shows the next question                                                :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|Questions page   |'Quit' button ends game and show end game page                                       :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|End game page    |Shows the total correct/incorrect score                                              :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
-|End game page    |'Play again' button start the game again, and reset scores, username and timer       :|Yes                       |
-|----------------:|-------------------------------------------------------------------------------------:|-------------------------:|
+| Page   | Test   | Completed successfully
+|--------|-------|:----:
+| All | Header navigates to landing page | Yes
+| All | Site is responsive on mobile and 768px and 992px | Yes
+| Landing page | Instruction button shows instructions, and close on X | Yes
+| Landing page | Input field allows for input name | Yes
+| Landing page | Modal shows if play button is clicked without entering a user name, ok close modal | Yes
+| Landing page | Game starts when user clicks 'Play' button| Yes
+| Questions page | Timer starts, then stops when an option is chosen | Yes
+| Questions page | Options are colored green/red to indicate correct/incorrect answer| Yes
+| Questions page | Score increments number of correct and incorrect answers| Yes
+| Questions page | Modal shows if 'Next' button is clicked before an answer is chosen | Yes
+| Questions page | 'Next' button shows the next question | Yes
+| Questions page | 'Quit' button ends game and show end game page | Yes
+| End game page | Shows the total correct/incorrect score | Yes
+| End game page | 'Play again' button start the game again, and reset scores, username and timer | Yes
+
 
 ### Validator
 

@@ -195,6 +195,7 @@ Inspiration and structure:
 * [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
 * [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 * [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/)
+* [MDN web docs](https://developer.mozilla.org/en-US/)
 
 Other student's work that has inspired:
 

@@ -199,9 +199,9 @@ Inspiration and structure:
 
 Other student's work that has inspired:
 
-* https://lienebriede.github.io/smart-panda-quiz/
-* https://aylamccarthy.github.io/all-about-pokemon/
-* https://asyaharoyan.github.io/gravity-guru/ Classes visible and hide in CSS.
+* <https://lienebriede.github.io/smart-panda-quiz/>
+* <https://aylamccarthy.github.io/all-about-pokemon/>
+* <https://asyaharoyan.github.io/gravity-guru/> Classes visible and hide in CSS.
 
 ## Content
 

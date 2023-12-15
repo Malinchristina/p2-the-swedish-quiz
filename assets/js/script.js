@@ -106,6 +106,12 @@ function startQuiz() {
     scoreArea.classList.remove("hide");
     scoreArea.classList.add("visible");
 
+    // Get shuffled question
+    let newQuestion = shuffleQuizQuestions();
+
+    // Set the current question to shuffled question
+    quizQuestions[questionIndex] = newQuestion;
+
     showQuestion();
 }
 

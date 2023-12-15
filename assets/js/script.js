@@ -229,6 +229,7 @@ function checkAnswer(event) {
 
 // Show next question
 function playNextQuestion() {
+   
     // Check if there are questions left
     if (questionIndex < quizQuestions.length - 1 && chosenAnswer) {
 
@@ -331,6 +332,7 @@ function playAgain() {
 //End game if user want to quit beforehand or all questions are played
 function endGame() {
     numberOfQuestions = 0;
+    questionIndex = 0;
 
     clearInterval(setTimer);
 

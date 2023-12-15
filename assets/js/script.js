@@ -151,7 +151,7 @@ function showQuestion() {
 
     // Let user play 10 questions
     numberOfQuestions++;
-    if (numberOfQuestions === 4) {
+    if (numberOfQuestions === 11) {
         endGame();
     }
 }

@@ -1,6 +1,6 @@
 // Load DOM fully before running the quiz
 // Get the button elements and add event listeners
-
+// From Love Maths
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByTagName("button");
 

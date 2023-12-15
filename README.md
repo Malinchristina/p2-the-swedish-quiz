@@ -172,7 +172,7 @@ Lighthouse was accessed in Chrome through Developer Tools to test:
 
 ### Unfixed bugs
 
-* Nothing to report.
+* Imported fonts from google does not load in parallel.
 
 ## Deployment
 

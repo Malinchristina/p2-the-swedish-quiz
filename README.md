@@ -133,6 +133,8 @@ A yellow question mark on blue background to match the site content.
 | End game page | Shows the total correct/incorrect score | Yes
 | End game page | 'Play again' button start the game again, and reset scores, username and timer | Yes
 
+* The game have been tested on different devices and brands such as Mac Air, samsung phones and tablet and Iphone.
+
 ### Validator
 
 * Html Checker

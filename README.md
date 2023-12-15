@@ -124,6 +124,7 @@ A yellow question mark on blue background to match the site content.
 | Landing page | Modal shows if play button is clicked without entering a user name, ok close modal | Yes
 | Landing page | Game starts when user clicks 'Play' button| Yes
 | Questions page | Timer starts, then stops when an option is chosen | Yes
+| Questions page | Questons are shuffled | Yes
 | Questions page | Options are colored green/red to indicate correct/incorrect answer| Yes
 | Questions page | Score increments number of correct and incorrect answers| Yes
 | Questions page | Modal shows if 'Next' button is clicked before an answer is chosen | Yes
@@ -131,7 +132,6 @@ A yellow question mark on blue background to match the site content.
 | Questions page | 'Quit' button ends game and show end game page | Yes
 | End game page | Shows the total correct/incorrect score | Yes
 | End game page | 'Play again' button start the game again, and reset scores, username and timer | Yes
-
 
 ### Validator
 
@@ -145,6 +145,13 @@ A yellow question mark on blue background to match the site content.
   * WAVE warned about empty form label for name input field which was correct with a span. [WAVE](https://wave.webaim.org/report#/https://malinchristina.github.io/p2-the-swedish-quiz/)
   
 ![Image of wave error](docs/testing/wave.png)
+
+* JSHint
+  * Warning on row 8 is bypassed as the function is from Love Maths
+  * Warning on row 124 'object spread property' is solved by using Object.assign instead.
+  * Undefined variable is due to the variable being in a separete js file.
+
+![JSHint warning](docs/testing/js_hint.png)
 
 ### Lighthouse
 

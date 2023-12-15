@@ -121,7 +121,7 @@ function startQuiz() {
  */
 function shuffleQuizQuestions() {
     let randomQuestions = Math.floor(Math.random() * quizQuestions.length);
-    let shuffledQuestion = { ...quizQuestions[randomQuestions] };
+    let shuffledQuestion = Object.assign({}, quizQuestions[randomQuestions]);
 
     // Get the corresponding answers
     let randomAnswers = Object.keys(shuffledQuestion.answers);
@@ -151,7 +151,7 @@ function showQuestion() {
 
     // Let user play 10 questions
     numberOfQuestions++;
-    if (numberOfQuestions === 4) { //Change to 11 after testing
+    if (numberOfQuestions === 4) {
         endGame();
     }
 }
@@ -196,7 +196,7 @@ function timesUp() {
     timesUpOk.addEventListener("click", function () {
             timeIsUp.style.display = "none";
 
-            // Delay endGame call
+            // Delay endGame call to show modal
             setTimeout(function () {
                 endGame();
             }, 100);
@@ -317,6 +317,8 @@ function resetScore() {
 //Restart the game
 function playAgain() {
     resetScore();
+
+    numberOfQuestions = 0;
 
     clearInterval(setTimer);
 

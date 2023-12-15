@@ -288,6 +288,7 @@ footer {
 .return-to-home a {
     text-decoration: none;
     font-size: 105%;
+    color: #ffffff;
 }
 
 /* Media query: tablets and larger (768px and up) */

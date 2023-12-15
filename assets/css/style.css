@@ -295,7 +295,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Instrucions*/
-    #instructions-content p {
+    #instructions-content li {
         margin: 0 4rem 0 4.5rem;
     }
 
@@ -314,7 +314,7 @@ footer {
     }
 
     /* Instructions*/
-    #instructions-content p {
+    ##instructions-content li {
         margin: 0 9rem 0 9.5rem;
     }
 

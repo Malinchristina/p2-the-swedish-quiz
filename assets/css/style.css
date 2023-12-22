@@ -314,7 +314,7 @@ footer {
     }
 
     /* Instructions*/
-    ##instructions-content li {
+    #instructions-content li {
         margin: 0 9rem 0 9.5rem;
     }
 
